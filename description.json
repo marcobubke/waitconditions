@@ -1,0 +1,10 @@
+{
+    "Name" : "Wait Conditions",
+    "ShortDescription" : "The Wait Conditions example shows how to use QWaitCondition and QMutex to control access to a circular buffer shared by a producer thread and a consumer thread.",
+    "DownloadLocation" : "https://api.github.com/repos/marcobubke/waitconditions/zipball/master",
+    "Icon" : "core.png",
+    "Id" : 4,
+    "Tags" : "core wait condition thread advanced",
+    "ProjectFile" : "waitconditions.pro",
+    "LongDescription" : "<p>The producer writes data to the buffer until it reaches the end of the buffer, at which point it restarts from the beginning, overwriting existing data. The consumer thread reads the data as it is produced and writes it to standard error.</p><p>Wait conditions make it possible to have a higher level of concurrency than what is possible with mutexes alone. If accesses to the buffer were simply guarded by a QMutex, the consumer thread couldn't access the buffer at the same time as the producer thread. Yet, there is no harm in having both threads working on different parts of the buffer at the same time.</p><p>The example comprises two classes: Producer and Consumer. Both inherit from QThread. The circular buffer used for communicating between these two classes and the synchronization tools that protect it are global variables.</p><p>An alternative to using QWaitCondition and QMutex to solve the producer-consumer problem is to use QSemaphore. This is what the Semaphores Example does.</p>"
+}
