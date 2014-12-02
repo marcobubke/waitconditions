@@ -1,7 +1,7 @@
 {
     "Name" : "Wait Conditions",
     "ShortDescription" : "The Wait Conditions example shows how to use QWaitCondition and QMutex to control access to a circular buffer shared by a producer thread and a consumer thread.",
-    "DownloadLocation" : "https://api.github.com/repos/marcobubke/waitconditions/zipball/master",
+    "DownloadLocation" : "https://api.github.com/repos/marcobubke/waitconditions/zipball/9a364786aacdfaee0b00a9b897a8f87f41b6fd66",
     "Icon" : "core.png",
     "Id" : 4,
     "Tags" : "core wait condition thread advanced",
